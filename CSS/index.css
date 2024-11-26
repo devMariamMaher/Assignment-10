@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap');
+
+:root{
+    --primary-font: "PT Sans Caption", sans-serif;
+    --secondary-font: "Pacifico", cursive;
+    --tertiary-font: "Righteous", sans-serif;
+    --section-bg: #F7ECDE;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--section-bg);
+}
+
+h1{
+    font-family: var(--secondary-font);
+    font-size: 3.125rem;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+h1::before{
+    content: "";
+    background-color: #FEC260;
+    position: absolute;
+    top: 65%;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s top;
+}
+
+h1:hover:before{
+    top: 35%;
+}
+
+h2{
+    font-family: var(--tertiary-font);
+    font-size: 1.5625rem;
+    background: linear-gradient(to right, #3ca55c, #dead0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-top: 2px dotted black;
+}
+
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+.btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+
+.form{
+    border-bottom: 2px dotted black;
+}
+
+.form-control:focus {
+    border-color: #D99C39;
+    box-shadow: 0 0 0 0.25rem #FADEB4;
+}
+
+.form-control:focus {
+    border-color: #D99C39;
+    box-shadow: 0 0 0 0.25rem #FADEB4;
+}
+
+.error-control {
+    border-color: #DC3545;
+    box-shadow: 0 0 0 0.25rem #F0BEB7;
+}
+
+.inputField{
+    position: relative;
+}
+
+.inputField #nameErrIcon, .inputField #urlErrIcon{
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+table th, table td{
+    border-bottom: 1px solid #dee2e6;
+}
+
+table th{
+    padding: 8px;
+}
+
+table td{
+    padding-block: 10px;
+}
